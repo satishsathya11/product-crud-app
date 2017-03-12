@@ -1,0 +1,38 @@
+{
+  "name": "node-react-mongo",
+  "version": "1.0.0",
+  "description": "Application demonstration CRUD operations",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "cors": "^2.8.1",
+    "express-graphql": "^0.4.x",
+    "graphql": "^0.4.x",
+    "immutable": "^3.8.1",
+    "mongodb": "^2.2.24",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "config": {
+    "CLIENT_PORT": 4000
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.4"
+  },
+  "scripts": {
+    "start": "npm run server-start | npm run client-start",
+    "client-start": "PORT=$npm_package_config_CLIENT_PORT react-scripts start",
+    "server-start": "nodemon app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
